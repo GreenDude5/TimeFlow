@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeFlow - Mój Planer</title>
+    <!-- Ładujemy Tailwind CSS - jak włączamy stylowanie -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    
+    <!-- Nagłówek - jak okładka książki -->
+    <header class="bg-blue-600 text-white p-6 shadow-lg">
+        <div class="container mx-auto">
+            <h1 class="text-3xl font-bold">⏰ TimeFlow</h1>
+            <p class="text-blue-100">Twój osobisty planer zadań</p>
+        </div>
+    </header>
+
+    <!-- Główna zawartość - jak strony w książce -->
+    <main class="container mx-auto p-6">
+        <div class="bg-white rounded-lg shadow-md p-6 max-w-2xl mx-auto">
+            <h2 class="text-2xl font-semibold mb-4">Witaj w TimeFlow! 🎉</h2>
+            
+            <p class="text-gray-600 mb-6">
+                To jest początek Twojej aplikacji do planowania czasu. 
+                Tutaj będziesz mógł dodawać zadania, ustalać priorytety i eksportować do kalendarza.
+            </p>
+
+            <!-- Prosty formularz - jak kwestionariusz -->
+            <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                <h3 class="text-lg font-medium text-blue-800 mb-2">Dodaj swoje pierwsze zadanie:</h3>
+                
+                <form class="flex gap-2">
+                    <input type="text" 
+                           placeholder="np. 'Przygotować prezentację'" 
+                           class="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    
+                    <button type="submit" 
+                            class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+                        Dodaj ✅
+                    </button>
+                </form>
+            </div>
+
+            <!-- Miejsce na listę zadań -->
+            <div class="mt-6">
+                <h3 class="text-xl font-medium mb-3">Twoje zadania:</h3>
+                <div class="text-gray-500 text-center py-8 border-2 border-dashed border-gray-300 rounded-lg">
+                    🚀 Tutaj pojawią się Twoje zadania!
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Stopka - jak podpis na końcu książki -->
+    <footer class="bg-gray-800 text-white text-center p-4 mt-8">
+        <p>© 2024 TimeFlow - Stworzone z Flaskiem ❤️</p>
+    </footer>
+
+</body>
+</html>
